@@ -43,7 +43,7 @@ export const baseURL =
         process.env.OPENAI_API_BASE_URL || defaultEnv.OPENAI_API_BASE_URL
       ).replace(/^https?:\/\//, "")
 
-// + 作用是将字符串转换为数字
+// + 作用是将字符串转换为
 const timeout = isNaN(+process.env.TIMEOUT!)
   ? defaultEnv.TIMEOUT
   : +process.env.TIMEOUT!
